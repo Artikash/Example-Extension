@@ -9,7 +9,7 @@ After the sentence has been processed by all extensions, it will be displayed.
 
 ## The following properties are in ```MiscInfo```
 ```"current select"```: always 0 unless the sentence is in the text channel currently selected by the user.<br>
-```"text number"```: number uniquely identifying the text channel the sentence is in. Console text channel is always 0.<br>
+```"hook address"```: address the hook was inserted at. May need cast to unsigned. Console text channel is always -1.<br>
 ```"process id"```: process id that the sentence is coming from.<br>
 
 # Notes
