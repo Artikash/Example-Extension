@@ -5,13 +5,14 @@ it will call ```OnNewSentence``` on all extensions it finds sequentially,
 plugging the output of ```OnNewSentence``` from the previous extension into the next extension.<br>
 After the sentence has been processed by all extensions, it will be displayed.
 
-# MiscInfo
+# SentenceInfo
 
-## The following properties are in ```MiscInfo```
-```"current select"```: always 0 unless the sentence is in the text channel currently selected by the user.<br>
+## The following properties are in ```SentenceInfo```
+```"current select"```: always 0 unless the sentence is in the text channel selected by the user.<br>
 ```"hook address"```: address the hook was inserted at. May need cast to unsigned. Console text channel is always -1.<br>
 ```"process id"```: process id that the sentence is coming from.<br>
-```"text handle"```: number that uniquely identifies the text channel the sentence is in.<br>
+```"text handle"```: number that uniquely identifies the current text channel.<br>
+```"text name"```: pointer to start of a wchar array of the name of the current text channel.<br>
 
 # Notes
 
