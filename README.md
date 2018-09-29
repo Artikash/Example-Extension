@@ -1,6 +1,6 @@
 # ExampleExtension
 
-Every time NextHooker has a sentence of text ready,
+Every time Textractor has a sentence of text ready,
 it will call ```OnNewSentence``` on all extensions it finds sequentially,
 plugging the output of ```OnNewSentence``` from the previous extension into the next extension.<br>
 After the sentence has been processed by all extensions, it will be displayed.
@@ -17,4 +17,4 @@ After the sentence has been processed by all extensions, it will be displayed.
 # Notes
 
 You just need Visual Studio with basic C++ support to compile this project.<br>
-Compile using Release configuration unless you built NextHooker from source yourself using a Debug configuration. Compile targeting x86 for NextHooker and x64 for NextHooker64.
+Compile using Release configuration unless you built Textractor from source yourself using a Debug configuration. Compile targeting x86 for Textractor and x64 for Textractor64.
