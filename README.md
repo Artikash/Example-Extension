@@ -8,11 +8,11 @@ After the sentence has been processed by all extensions, it will be displayed.
 # SentenceInfo
 
 ## The following properties are in ```SentenceInfo```
-```"current select"```: always 0 unless the sentence is in the text channel selected by the user.<br>
-```"hook address"```: address the hook was inserted at. May need cast to unsigned. Console text channel is always -1.<br>
-```"process id"```: process id that the sentence is coming from.<br>
-```"text handle"```: number that uniquely identifies the current text channel.<br>
-```"text name"```: pointer to start of a wchar array of the name of the current text channel.<br>
+```"current select"```: always 0 unless the sentence is in the text thread selected by the user.<br>
+```"hook address"```: address the hook was inserted at. May need cast to unsigned. Console text thread is always -1.<br>
+```"process id"```: process id that the sentence is coming from. 0 for console and clipboard text threads.<br>
+```"text handle"```: number that uniquely identifies the current text thread.<br>
+```"text name"```: pointer to start of a wchar array of the name of the current text thread.<br>
 
 # Notes
 
