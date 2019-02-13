@@ -17,4 +17,4 @@ After the sentence has been processed by all extensions, it will be displayed.
 # Notes
 
 You just need Visual Studio with basic C++ support to compile this project.<br>
-Compile using Release configuration unless you built Textractor from source yourself using a Debug configuration. Compile targeting x86 for Textractor and x64 for Textractor64.
+Compile targeting x86 for Textractor and x64 for Textractor64.
