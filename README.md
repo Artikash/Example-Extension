@@ -9,9 +9,8 @@ After the sentence has been processed by all extensions, it will be displayed.
 
 ## The following properties are in ```SentenceInfo```
 ```"current select"```: always 0 unless the sentence is in the text thread selected by the user.<br>
-```"hook address"```: address the hook was inserted at. May need cast to unsigned. Console text thread is always -1.<br>
-```"process id"```: process id that the sentence is coming from. 0 for console and clipboard text threads.<br>
-```"text handle"```: number that uniquely identifies the current text thread.<br>
+```"process id"```: process id that the sentence is coming from. 0 for console and clipboard.<br>
+```"text number"```: number of the current text thread. Counts up one by one as text threads are created. 0 for console, 1 for clipboard.<br>
 ```"text name"```: pointer to start of a wchar array of the name of the current text thread.<br>
 
 # Notes
