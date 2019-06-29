@@ -15,11 +15,11 @@ struct InfoForExtension
 struct SentenceInfo
 {
 	const InfoForExtension* infoArray;
-	// nullptr marks end of info array
 	int64_t operator[](std::string propertyName)
 	{
-		for (auto info = infoArray; info->name != nullptr; ++info) if (propertyName == info->name) return info->value;
-		throw;
+		for (auto info = infoArray; info->name; ++info) // nullptr name marks end of info array
+			if (propertyName == info->name) return info->value;
+		return *(int*)0xcccc = 0; // gives better error message than alternatives
 	}
 };
 
