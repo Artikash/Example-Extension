@@ -1,4 +1,4 @@
-# ExampleExtension
+# Example Extension
 
 Every time Textractor has a sentence of text ready,
 it will call ```OnNewSentence``` on all extensions it finds sequentially,
