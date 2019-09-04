@@ -1,21 +1,18 @@
 # Example Extension
 
-Every time Textractor has a sentence of text ready,
-it will call ```OnNewSentence``` on all extensions it finds sequentially,
-plugging the output of ```OnNewSentence``` from the previous extension into the next extension.<br>
+Every time Textractor has a sentence of text ready, it will call `ProcessSentence` on all extensions it finds sequentially (via `OnNewSentence`)
 After the sentence has been processed by all extensions, it will be displayed.
 
 # SentenceInfo
 
-## The following properties are in ```SentenceInfo```
-```"current select"```: always 0 unless the sentence is in the text thread selected by the user.<br>
-```"process id"```: process id that the sentence is coming from. 0 for console and clipboard.<br>
-```"text number"```: number of the current text thread. Counts up one by one as text threads are created. 0 for console, 1 for clipboard.<br>
-```"text name"```: pointer to start of a wchar array of the name of the current text thread.<br>
-```"void (*AddSentence)(void* this, int64_t number, const wchar_t* sentence)"```: pointer to function that adds a sentence to the text thread with the specified number.<br>
-```"this"```: context pointer used for aforementioned function.
+## The following properties are in `SentenceInfo`
+`"current select"`: always 0 unless the sentence is in the text thread selected by the user.<br>
+`"process id"`: process id that the sentence is coming from. 0 for console and clipboard.<br>
+`"text number"`: number of the current text thread. Counts up one by one as text threads are created. 0 for console, 1 for clipboard.<br>
+`"text name"`: pointer to start of a wchar array of the name of the current text thread.<br>
+`"void (*AddSentence)(void* this, int64_t number, const wchar_t* sentence)"`: pointer to function that adds a sentence to the text thread with the specified number.<br>
+`"this"`: context pointer used for aforementioned function.
 
 # Notes
 
-You just need Visual Studio with basic C++ support to compile this project.<br>
-Compile targeting x86 for Textractor and x64 for Textractor64.
+You just need Visual Studio with basic C++ support to compile this project.
