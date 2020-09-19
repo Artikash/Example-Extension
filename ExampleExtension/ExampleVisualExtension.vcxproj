@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{577FDFFF-CBC8-4889-BC1C-27267DF3367A}</ProjectGuid>
+    <ProjectGuid>{55D08EC5-DC85-4C01-8768-33B1DE95C5FC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ExampleExtension</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -152,7 +152,7 @@
     <ClInclude Include="Extension.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Extension.cpp" />
+    <ClCompile Include="VisualExtension.cpp" />
     <ClCompile Include="ExtensionImpl.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
